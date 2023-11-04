@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.16)
+project(Basic VERSION 1.0 LANGUAGES C CXX)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(CMAKE_AUTOMOC ON)
+include(GNUInstallDirs)
+
+find_package(QT NAMES Qt5 Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui)
+find_package(Qt${QT_VERSION_MAJOR} OPTIONAL_COMPONENTS Widgets)
+
+add_executable(Basic WIN32 MACOSX_BUNDLE
+    image_base.cpp image_base.h
+    main.cpp
+)
+target_link_libraries(Basic PRIVATE
+    Qt::Core
+    Qt::Gui
+)
+
+if((QT_VERSION_MAJOR GREATER 4))
+    target_link_libraries(Basic PRIVATE
+        Qt::Widgets
+    )
+endif()
+
+install(TARGETS Basic
+    BUNDLE DESTINATION .
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
