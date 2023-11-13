@@ -15,7 +15,7 @@ add_executable(ImageDisplay WIN32 MACOSX_BUNDLE
     image_base.cpp image_base.h
     main.cpp
 )
-target_link_libraries(Image_Display PRIVATE
+target_link_libraries(ImageDisplay PRIVATE
     Qt::Core
     Qt::Gui
 )
