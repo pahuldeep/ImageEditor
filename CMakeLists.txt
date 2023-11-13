@@ -11,19 +11,13 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui)
 find_package(Qt${QT_VERSION_MAJOR} OPTIONAL_COMPONENTS Widgets)
 
 
-# Find OpenCV package
-find_package(OpenCV REQUIRED)
-
-
-add_executable(Image_Display WIN32 MACOSX_BUNDLE
+add_executable(ImageDisplay WIN32 MACOSX_BUNDLE
     image_base.cpp image_base.h
     main.cpp
 )
 target_link_libraries(Image_Display PRIVATE
     Qt::Core
     Qt::Gui
-
-    ${OpenCV_LIBS}  # Link OpenCV libraries
 )
 
 if((QT_VERSION_MAJOR GREATER 4))
@@ -32,7 +26,7 @@ if((QT_VERSION_MAJOR GREATER 4))
     )
 endif()
 
-install(TARGETS Image_Display
+install(TARGETS ImageDisplay
     BUNDLE DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
