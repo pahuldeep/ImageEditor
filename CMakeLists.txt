@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(Image_Display VERSION 1.0 LANGUAGES C CXX)
+project(ImageDisplay VERSION 1.0 LANGUAGES C CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
