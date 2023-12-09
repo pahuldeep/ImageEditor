@@ -1,0 +1,9 @@
+# ninja log v5
+1	331	7238110673922424	Image_Editor_autogen/timestamp	ad92be52b393593e
+1	331	7238110673922424	Image_Editor_autogen/mocs_compilation.cpp	ad92be52b393593e
+1	331	7238110673922424	D:/QTFramework/PROJECTS/image_Editor/build/Image_Editor_autogen/timestamp	ad92be52b393593e
+1	331	7238110673922424	D:/QTFramework/PROJECTS/image_Editor/build/Image_Editor_autogen/mocs_compilation.cpp	ad92be52b393593e
+337	2536	7238110696289294	CMakeFiles/Image_Editor.dir/source/main.cpp.obj	55782382788d6715
+331	2540	7238110696289294	CMakeFiles/Image_Editor.dir/Image_Editor_autogen/mocs_compilation.cpp.obj	900c81fc0a881f0
+334	2554	7238110696504243	CMakeFiles/Image_Editor.dir/source/editor.cpp.obj	b19371e72682779b
+2554	2916	7238110699912725	Image_Editor.exe	e042ff55551affea

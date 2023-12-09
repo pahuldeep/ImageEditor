@@ -1,0 +1,8 @@
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/Image_Editor.dir
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/edit_cache.dir
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/rebuild_cache.dir
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/list_install_components.dir
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/install.dir
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/install/local.dir
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/Image_Editor_autogen_timestamp_deps.dir
+D:/QTFramework/PROJECTS/image_Editor/build/CMakeFiles/Image_Editor_autogen.dir

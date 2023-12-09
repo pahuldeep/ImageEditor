@@ -13,15 +13,15 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
-        main.cpp
-        editor.cpp
-        editor.h
-        plugin_interface.h
+        source/main.cpp
+        source/editor.cpp
+        source/editor.h
+        source/plugin_interface.h
 )
+
 
 # OpenCV settings
 set(OpenCV_DIR C:/LIBRARY/OpenCV)
-
 set(OpenCV_CUDA ON)
 set(OpenCV_STATIC ON)
 
@@ -42,8 +42,10 @@ else()
 endif()
 
 
-target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS} Qt${QT_VERSION_MAJOR}::Widgets )
-
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE ${OpenCV_LIBS}
+    Qt${QT_VERSION_MAJOR}::Widgets
+)
 
 if(${QT_VERSION} VERSION_LESS 6.1.0)
   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.${PROJECT_NAME})
